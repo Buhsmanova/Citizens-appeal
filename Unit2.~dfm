@@ -1,9 +1,9 @@
 object Form2: TForm2
-  Left = 246
-  Top = 168
-  Width = 928
-  Height = 480
-  Caption = #1054#1073#1088#1072#1097#1077#1085#1080#1077' '#1075#1088#1072#1078#1076#1072#1085
+  Left = 262
+  Top = 339
+  Width = 1305
+  Height = 675
+  Caption = 'Form2'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,49 +14,22 @@ object Form2: TForm2
   PixelsPerInch = 96
   TextHeight = 13
   object DBGrid1: TDBGrid
-    Left = 32
-    Top = 136
-    Width = 649
-    Height = 184
+    Left = 48
+    Top = 64
+    Width = 1217
+    Height = 209
     DataSource = DataSource1
-    DefaultDrawing = False
     TabOrder = 0
     TitleFont.Charset = DEFAULT_CHARSET
     TitleFont.Color = clWindowText
     TitleFont.Height = -11
     TitleFont.Name = 'MS Sans Serif'
     TitleFont.Style = []
-    Columns = <
-      item
-        Expanded = False
-        FieldName = 'residents_id'
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'ful_name'
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'brith_date'
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'adress'
-        Visible = True
-      end
-      item
-        Expanded = False
-        FieldName = 'contakt_info'
-        Visible = True
-      end>
   end
   object DBNavigator1: TDBNavigator
-    Left = 248
-    Top = 368
-    Width = 320
+    Left = 40
+    Top = 288
+    Width = 240
     Height = 25
     DataSource = DataSource1
     TabOrder = 1
@@ -68,30 +41,29 @@ object Form2: TForm2
     UserPassword = 'pgu2023pgu2023'
     Host = '91.219.194.4'
     ConnectOptions = []
-    ConnectionCharacterSet = 'utf8'
-    HandleShared = True
+    ConnectionCharacterSet = 'utf8mb3'
     Params.Strings = (
       'Port=3306'
       'TIMEOUT=30'
-      'DatabaseName=bh35910_kis'
       'UID=bh35910_student1711'
       'PWD=pgu2023pgu2023'
-      'Host=91.219.194.4')
+      'Host=91.219.194.4'
+      'DatabaseName=bh35910_kis')
+    SSLProperties.TLSVersion = tlsAuto
     DatasetOptions = []
-    Left = 88
-    Top = 64
+    Left = 40
+    Top = 16
   end
   object MySQLTable1: TMySQLTable
     Database = MySQLDatabase1
     Active = True
     TableName = 'Buhsmanova_Residents'
-    Left = 216
-    Top = 72
+    Left = 88
+    Top = 16
   end
   object DataSource1: TDataSource
-    Tag = 23
     DataSet = MySQLTable1
-    Left = 392
-    Top = 80
+    Left = 136
+    Top = 16
   end
 end
