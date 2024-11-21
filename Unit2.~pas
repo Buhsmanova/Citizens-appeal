@@ -4,7 +4,8 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, ExtCtrls, DBCtrls, Grids, DBGrids, DB, mySQLDbTables;
+  Dialogs, StdCtrls, Mask, DBCtrls, ExtCtrls, Grids, DBGrids, DB,
+  mySQLDbTables;
 
 type
   TForm2 = class(TForm)
@@ -13,6 +14,12 @@ type
     DataSource1: TDataSource;
     DBGrid1: TDBGrid;
     DBNavigator1: TDBNavigator;
+    DBEdit1: TDBEdit;
+    DBEdit2: TDBEdit;
+    DBEdit3: TDBEdit;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
   private
     { Private declarations }
   public

@@ -1,9 +1,9 @@
-object Form2: TForm2
-  Left = 368
-  Top = 249
-  Width = 928
-  Height = 480
-  Caption = 'Form2'
+object Form4: TForm4
+  Left = 343
+  Top = 207
+  Width = 747
+  Height = 465
+  Caption = 'Send'
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -80,33 +80,6 @@ object Form2: TForm2
     Height = 25
     DataSource = DataSource1
     TabOrder = 1
-  end
-  object DBEdit1: TDBEdit
-    Left = 64
-    Top = 16
-    Width = 121
-    Height = 21
-    DataField = 'ful_name'
-    DataSource = DataSource1
-    TabOrder = 2
-  end
-  object DBEdit2: TDBEdit
-    Left = 280
-    Top = 16
-    Width = 121
-    Height = 21
-    DataField = 'contakt_info'
-    DataSource = DataSource1
-    TabOrder = 3
-  end
-  object DBEdit3: TDBEdit
-    Left = 528
-    Top = 32
-    Width = 121
-    Height = 21
-    DataField = 'brith_date'
-    DataSource = DataSource1
-    TabOrder = 4
   end
   object MySQLDatabase1: TMySQLDatabase
     Connected = True
