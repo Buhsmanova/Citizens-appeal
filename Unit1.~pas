@@ -4,10 +4,17 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs;
+  Dialogs, StdCtrls;
 
 type
   TForm1 = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -19,7 +26,23 @@ var
 
 implementation
 
+uses Unit2, Unit4, Unit3;
+
 {$R *.dfm}
 
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+Form2.show();
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+Form3.show();
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+Form4.show();
+end;
+
 end.
- 

@@ -4,10 +4,21 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs;
+  Dialogs, ExtCtrls, DBCtrls, Grids, DBGrids, DB, StdCtrls, mySQLDbTables;
 
 type
   TForm4 = class(TForm)
+    MySQLDatabase1: TMySQLDatabase;
+    MySQLTable1: TMySQLTable;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    DataSource1: TDataSource;
+    DBGrid1: TDBGrid;
+    DBNavigator1: TDBNavigator;
   private
     { Private declarations }
   public
@@ -22,4 +33,3 @@ implementation
 {$R *.dfm}
 
 end.
- 

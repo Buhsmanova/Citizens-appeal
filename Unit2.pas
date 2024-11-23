@@ -4,22 +4,21 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, Mask, DBCtrls, ExtCtrls, Grids, DBGrids, DB,
+  Dialogs, DB, ADODB, ExtCtrls, DBCtrls, Grids, DBGrids, StdCtrls,
   mySQLDbTables;
 
 type
   TForm2 = class(TForm)
-    MySQLDatabase1: TMySQLDatabase;
-    MySQLTable1: TMySQLTable;
-    DataSource1: TDataSource;
-    DBGrid1: TDBGrid;
-    DBNavigator1: TDBNavigator;
-    DBEdit1: TDBEdit;
-    DBEdit2: TDBEdit;
-    DBEdit3: TDBEdit;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
+    DBGrid1: TDBGrid;
+    DBNavigator1: TDBNavigator;
+    MySQLDatabase1: TMySQLDatabase;
+    MySQLTable1: TMySQLTable;
   private
     { Private declarations }
   public
